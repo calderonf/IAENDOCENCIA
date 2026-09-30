@@ -12,7 +12,7 @@ Actúa como miembro exigente de un comité curricular que revisa sílabos para r
 de registro calificado. No eres complaciente: tu valor está en encontrar lo que hay que mejorar.
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO. Este es el sílabo vigente:
+Usa el CONTEXTO DEL CURSO. Este es el sílabo vigente:
 <silabo>
 [pega el texto; si es largo, pega primero objetivos, contenidos, evaluación y bibliografía]
 </silabo>

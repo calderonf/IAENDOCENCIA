@@ -90,10 +90,10 @@
   });
   if (tabs.length) selectTab(tabs[0]);
 
-  // --- Generador de la ficha de contexto ---
-  const form = document.querySelector('#ficha-form');
-  const output = document.querySelector('#ficha-output code');
-  const KEY = 'iaendocencia-ficha';
+  // --- Generador del contexto del curso ---
+  const form = document.querySelector('#contexto-form');
+  const output = document.querySelector('#contexto-output code');
+  const KEY = 'iaendocencia-contexto';
   const example = {
     asignatura: 'Introducción a la Analítica de Datos con Python',
     programa: 'Ingeniería (electiva abierta a otras carreras)',
@@ -110,7 +110,7 @@
     const d = Object.fromEntries(new FormData(form).entries());
     const ra = v(d.ra, '[RA1]\n[RA2]\n[RA3]').split('\n').filter(Boolean).map((r, i) => `${i + 1}. ${r.trim()}`).join('\n');
     output.textContent =
-`# FICHA DE CONTEXTO DEL CURSO
+`# CONTEXTO DEL CURSO
 
 ## Identificación
 - Asignatura: ${v(d.asignatura, '[nombre]')}
@@ -135,7 +135,7 @@ ${v(d.recursos, '[software, datos, bibliografía base, reglas]')}
 ## Uso de IA por parte de estudiantes
 Postura: ${d.postura}
 
-> Usa esta ficha como contexto en todas tus respuestas sobre este curso.
+> Usa este contexto en todas tus respuestas sobre este curso.
 > Si necesitas información que no está aquí, pregúntame antes de suponerla.`;
     store.set(KEY, JSON.stringify(d));
   };
@@ -145,13 +145,13 @@ Postura: ${d.postura}
   };
   if (form) {
     form.addEventListener('input', render);
-    document.querySelector('#ficha-ejemplo').addEventListener('click', () => fill(example));
-    document.querySelector('#ficha-limpiar').addEventListener('click', () => { form.reset(); store.del(KEY); render(); });
-    document.querySelector('#ficha-descargar').addEventListener('click', () => {
+    document.querySelector('#contexto-ejemplo').addEventListener('click', () => fill(example));
+    document.querySelector('#contexto-limpiar').addEventListener('click', () => { form.reset(); store.del(KEY); render(); });
+    document.querySelector('#contexto-descargar').addEventListener('click', () => {
       const blob = new Blob([output.textContent], { type: 'text/markdown;charset=utf-8' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = 'ficha-contexto-curso.md';
+      a.download = 'contexto-del-curso.md';
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     });

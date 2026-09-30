@@ -10,7 +10,7 @@
 Actúa como docente de [asignatura] que prepara un taller de práctica.
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO.
+Usa el CONTEXTO DEL CURSO.
 Tema: [p. ej. limpieza de datos con pandas / regresión lineal simple / oferta y demanda / interés compuesto]
 Resultado de aprendizaje: [RA]
 (Opcional) Un ejercicio mío como modelo de estilo y dificultad:

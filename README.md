@@ -11,7 +11,7 @@ Sesión 4 del curso *Aula Aumentada: Fundamentos de IA Generativa para la Docenc
 | Sección | Tema |
 |---|---|
 | 01 | Anatomía de un buen prompt (rol · contexto · tarea · formato · restricciones) y técnicas aplicadas a tareas docentes |
-| 02 | Ficha de contexto del curso, con generador interactivo |
+| 02 | Contexto del curso, con generador interactivo |
 | 03 | Resultados de aprendizaje medibles: taxonomía de Bloom y alineación constructiva |
 | 04 | Actualizar un sílabo en 5 pasos: auditor crítico, bibliografía verificable y cláusula de uso de IA |
 | 05 | Una actividad en tres variantes: sin IA, IA declarada, IA como objeto de análisis |
@@ -26,9 +26,9 @@ Sesión 4 del curso *Aula Aumentada: Fundamentos de IA Generativa para la Docenc
 ```
 index.html                  Sitio del taller (una sola página)
 assets/css/style.css        Estilos (colores institucionales, modo oscuro, móvil)
-assets/js/app.js            Navegación, copiar prompts, generador de ficha, pestañas
+assets/js/app.js            Navegación, copiar prompts, generador del contexto del curso, pestañas
 prompts/                    Kit de 11 plantillas en Markdown (00–10) + índice
-ejemplos/                   Ficha de ejemplo, resultados antes/después, actividad con datos (CSV)
+ejemplos/                   Contexto de ejemplo, resultados antes/después, actividad con datos (CSV)
 guia-participante.md        Resumen de una página para los asistentes
 ```
 
@@ -58,7 +58,7 @@ El archivo `.nojekyll` hace que GitHub Pages sirva los `.md` tal cual, lo necesa
 
 ## Privacidad
 
-No cargues nombres, códigos, correos ni notas de estudiantes, ni información institucional reservada, en herramientas de IA públicas. El generador de la ficha funciona solo en el navegador y no envía datos a ningún servidor.
+No cargues nombres, códigos, correos ni notas de estudiantes, ni información institucional reservada, en herramientas de IA públicas. El generador del contexto del curso funciona solo en el navegador y no envía datos a ningún servidor.
 
 ## Créditos y licencia
 

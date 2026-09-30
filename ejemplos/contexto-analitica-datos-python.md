@@ -1,6 +1,6 @@
-# FICHA DE CONTEXTO DEL CURSO — ejemplo resuelto
+# CONTEXTO DEL CURSO — ejemplo resuelto
 
-> Curso ficticio para ilustrar la ficha. Cópiala, reemplázala con los datos de tu curso y úsala con cualquiera de los prompts del kit.
+> Curso ficticio para ilustrar el contexto del curso. Cópialo, reemplaza los datos con los de tu curso y úsalo con cualquiera de los prompts del kit.
 
 ## Identificación
 - Asignatura: Introducción a la Analítica de Datos con Python

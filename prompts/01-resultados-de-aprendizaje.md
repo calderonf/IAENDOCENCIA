@@ -1,7 +1,7 @@
 # 01 · Redactar o mejorar resultados de aprendizaje
 
 > **Técnicas de prompting que usa:** rol, restricciones, formato de salida en tabla, cadena de pensamiento guiada por pasos y "pregúntame antes de responder".
-> **Entrada:** tu ficha de contexto + los resultados de aprendizaje (RA) actuales, o la idea general si partes de cero.
+> **Entrada:** el contexto de tu curso + los resultados de aprendizaje (RA) actuales, o la idea general si partes de cero.
 
 ---
 
@@ -11,7 +11,7 @@ Actúa como asesor(a) de diseño curricular en educación superior, con experien
 alineación constructiva (Biggs) y en la taxonomía de Bloom revisada (Anderson y Krathwohl).
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO.
+Usa el CONTEXTO DEL CURSO.
 Estos son los resultados de aprendizaje actuales (o mis ideas iniciales):
 <resultados>
 [pega aquí]

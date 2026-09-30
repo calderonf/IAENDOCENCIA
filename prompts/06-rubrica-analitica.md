@@ -12,7 +12,7 @@
 Actúa como especialista en evaluación del aprendizaje en educación superior.
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO.
+Usa el CONTEXTO DEL CURSO.
 Actividad a evaluar:
 <actividad>[pega la consigna]</actividad>
 Resultado(s) de aprendizaje que evalúa:

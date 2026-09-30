@@ -87,9 +87,6 @@ table.data td:first-child{font-weight:650}
 .anatomy-item b{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--yellow);color:#1b1b1b;font-size:.8rem}
 .anatomy-item h3{margin:.55rem 0 .2rem;font-size:1.02rem}
 .anatomy-item p{margin:0;font-size:.86rem;color:var(--muted)}
-.plus{display:flex;align-items:center;gap:1rem;margin:1.2rem 0 0;padding:1rem 1.2rem;border:2px dashed var(--blue);border-radius:.8rem;background:var(--panel)}
-.plus>strong{font-size:1.6rem;color:var(--blue)}
-.plus p{margin:0}
 
 /* Código / prompts */
 .code-panel{background:var(--code);color:var(--code-ink);border-radius:.8rem;overflow:hidden;box-shadow:var(--shadow)}
@@ -138,7 +135,7 @@ table.data td:first-child{font-weight:650}
 .ai-answer{padding:1rem 1.2rem;border-radius:.7rem;background:var(--panel);border:1px dashed var(--bad);font-size:.93rem}
 .ai-answer p{margin:.4rem 0}
 
-/* Ficha generador */
+/* Generador del contexto del curso */
 .builder{display:grid;grid-template-columns:.95fr 1.05fr;gap:1.5rem;align-items:start}
 .form{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;padding:1.2rem;background:var(--panel);border:1px solid var(--line);border-radius:.8rem}
 .form label{display:flex;flex-direction:column;gap:.25rem;font-size:.78rem;font-weight:700;color:var(--muted)}

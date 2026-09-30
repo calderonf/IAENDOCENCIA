@@ -7,13 +7,13 @@ Miércoles 30 de septiembre de 2026 · Francisco Carlos Calderón, Ph.D.
 
 ## La idea en una frase
 
-Un prompt docente es la anatomía de un buen prompt (**rol · contexto · tarea · formato · restricciones**) más un **contexto pedagógico** que se escribe una vez y se reutiliza: la ficha de contexto del curso.
+Un prompt docente es la anatomía de un buen prompt (**rol · contexto · tarea · formato · restricciones**) más un **contexto pedagógico** que se escribe una vez y se reutiliza: el contexto del curso.
 
 ## De las técnicas de prompting a tu curso
 
 | Técnica de prompting | Uso docente |
 |---|---|
-| Rol + contexto | Ficha de contexto del curso, pegada o guardada en un Proyecto o Gem |
+| Rol + contexto | Contexto del curso, pegado al inicio o guardado en un Proyecto o Gem |
 | Few-shot (dar ejemplos) | Pegar un caso o ejercicio tuyo para que imite estilo y dificultad |
 | Cadena de pensamiento por pasos | Diagnosticar un RA antes de reescribirlo |
 | Encadenamiento de prompts | Auditor → resultados → alineación → actividad → rúbrica |
@@ -32,7 +32,7 @@ Un prompt docente es la anatomía de un buen prompt (**rol · contexto · tarea 
 
 Más ejemplos de varias áreas en `ejemplos/resultados-antes-despues.md`.
 
-Alineación constructiva (Biggs): cada resultado necesita una actividad que lo prepare y una evidencia que lo demuestre.
+[Alineación constructiva](https://es.wikipedia.org/wiki/Constructive_alignment) (Biggs): tres piezas deben apuntar a lo mismo, el resultado de aprendizaje, la actividad que lo prepara y la evaluación que lo evidencia. Si falta una, o no coinciden, hay un hueco en el curso. Los verbos por nivel vienen de la [taxonomía de Bloom](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy).
 
 ## Actualizar un sílabo en 5 pasos
 
@@ -52,7 +52,7 @@ Alineación constructiva (Biggs): cada resultado necesita una actividad que lo p
 
 ## Taller en clase (15 min)
 
-1. Abre la plantilla **00 · Ficha de contexto** y llénala para un curso tuyo. Bastan las secciones de identificación, estudiantes y resultados de aprendizaje.
+1. Abre la plantilla **00 · Contexto del curso** y llénala para un curso tuyo. Bastan las secciones de identificación, estudiantes y resultados de aprendizaje.
 2. Úsala con el prompt **01 · Resultados de aprendizaje** sobre **uno** de tus resultados.
 3. Comparte en el chat el antes y el después de ese resultado.
 

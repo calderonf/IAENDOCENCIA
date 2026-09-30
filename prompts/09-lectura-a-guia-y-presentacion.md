@@ -9,7 +9,7 @@
 ## Paso 1 · Síntesis anclada en la lectura
 
 ```markdown
-Usa la FICHA DE CONTEXTO DEL CURSO y SOLO el documento adjunto [título, autor, año].
+Usa el CONTEXTO DEL CURSO y SOLO el documento adjunto [título, autor, año].
 Objetivo de la sesión: que los estudiantes puedan [RA o propósito].
 1. Identifica las 5–7 ideas centrales. Para cada una: explicación en 2–3 oraciones,
    un ejemplo del contexto local y la página o sección de la lectura donde aparece.

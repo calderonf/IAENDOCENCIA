@@ -11,7 +11,7 @@
 Actúa como autor(a) de casos de enseñanza universitaria en [disciplina].
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO.
+Usa el CONTEXTO DEL CURSO.
 Tema del caso: [p. ej. una alcaldía decide dónde instalar sensores de calidad del aire con
 presupuesto limitado / una tienda quiere entender por qué cayeron sus ventas]
 Resultado de aprendizaje que debe movilizar: [RA]

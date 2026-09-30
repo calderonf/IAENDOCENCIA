@@ -1,7 +1,7 @@
 # 02 · Mapa de alineación: resultado → actividad → evidencia
 
 > **Idea clave (Biggs):** se enseña lo que se evalúa y se evalúa lo que se declaró. Este prompt revela huecos: resultados sin evaluación, evaluaciones que no miden ningún resultado o actividades que no preparan para la evaluación.
-> **Entrada:** ficha de contexto + RA (ya mejorados con el prompt 01) + calendario o lista de evaluaciones.
+> **Entrada:** contexto del curso + RA (ya mejorados con el prompt 01) + calendario o lista de evaluaciones.
 
 ---
 
@@ -11,7 +11,7 @@ Actúa como par evaluador(a) de programas académicos. Tu trabajo es encontrar
 incoherencias, no felicitarme.
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO.
+Usa el CONTEXTO DEL CURSO.
 <resultados>
 [RA1 ... RAn]
 </resultados>
@@ -32,6 +32,6 @@ Usa la FICHA DE CONTEXTO DEL CURSO.
 
 ## RESTRICCIONES
 - No agregues evaluaciones nuevas si puedes ajustar las existentes.
-- Respeta las reglas institucionales de la ficha (pesos máximos, número de notas).
+- Respeta las reglas institucionales del contexto del curso (pesos máximos, número de notas).
 - No suavices los hallazgos: si todo está bien, di explícitamente por qué.
 ```

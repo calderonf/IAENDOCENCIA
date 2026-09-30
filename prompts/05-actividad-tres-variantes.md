@@ -16,7 +16,7 @@
 Actúa como diseñador(a) instruccional para cursos universitarios de [disciplina].
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO.
+Usa el CONTEXTO DEL CURSO.
 Resultado de aprendizaje que quiero trabajar:
 <ra>[pega un solo RA]</ra>
 Tiempo disponible: [90 min en clase + 3 h de trabajo autónomo].

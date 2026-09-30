@@ -1,11 +1,11 @@
 # Kit de prompts docentes · Sesión 4
 
 Cada plantilla sigue la anatomía de un buen prompt: **ROL · CONTEXTO · TAREA · FORMATO · RESTRICCIONES**.
-Todas empiezan con la misma pieza, la **ficha de contexto del curso**, para no volver a explicar tu curso en cada conversación.
+Todas empiezan con el mismo bloque, el **contexto del curso**, para no volver a explicar tu curso en cada conversación.
 
 | # | Plantilla | Para qué | Técnica de prompting |
 |---|---|---|---|
-| 00 | [Ficha de contexto del curso](00-ficha-contexto-curso.md) | Contexto reutilizable | Contexto |
+| 00 | [Contexto del curso](00-contexto-del-curso.md) | Contexto reutilizable | Contexto |
 | 01 | [Resultados de aprendizaje](01-resultados-de-aprendizaje.md) | Redactar o mejorar RA medibles | Cadena de pensamiento guiada + "pregúntame" |
 | 02 | [Mapa de alineación](02-mapa-de-alineacion.md) | RA → actividad → evidencia | Formato tabla + rol crítico |
 | 03 | [Auditor de sílabo](03-auditor-de-silabo.md) | Diagnóstico de un sílabo vigente | Rol exigente, anticomplacencia |
@@ -20,7 +20,7 @@ Todas empiezan con la misma pieza, la **ficha de contexto del curso**, para no v
 ## Cadena sugerida para actualizar un curso
 
 ```
-00 Ficha  →  03 Auditor  →  01 Resultados  →  02 Alineación  →  05 Actividad  →  06 Rúbrica  →  10 Validación
+00 Contexto  →  03 Auditor  →  01 Resultados  →  02 Alineación  →  05 Actividad  →  06 Rúbrica  →  10 Validación
                               ↘ 04 Bibliografía                    ↘ 07 Caso / 08 Ejercicios / 09 Guía
 ```
 

@@ -10,7 +10,7 @@
 Actúa como bibliotecario(a) académico(a) especializado(a) en [disciplina].
 
 ## CONTEXTO
-Usa la FICHA DE CONTEXTO DEL CURSO. Bibliografía actual:
+Usa el CONTEXTO DEL CURSO. Bibliografía actual:
 <bibliografia>
 [pega la lista]
 </bibliografia>

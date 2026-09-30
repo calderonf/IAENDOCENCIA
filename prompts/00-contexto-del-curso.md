@@ -1,14 +1,14 @@
-# 00 · Ficha de contexto del curso
+# 00 · Contexto del curso
 
 > **Para qué sirve.** Es el *contexto* de la anatomía de un buen prompt (rol · contexto · tarea · formato · restricciones), escrito una sola vez y reutilizado en todos los prompts de este kit.
-> Pégala al inicio de cada conversación o guárdala como instrucciones de un **Proyecto** (ChatGPT, Claude), una **Gem** (Gemini) o como fuente en un cuaderno de **NotebookLM**.
+> Pégalo al inicio de cada conversación o guárdalo como instrucciones de un **Proyecto** (ChatGPT, Claude), una **Gem** (Gemini) o como fuente en un cuaderno de **NotebookLM**.
 >
 > **No incluyas** nombres, códigos ni notas de estudiantes, ni información institucional reservada.
 
 ---
 
 ```markdown
-# FICHA DE CONTEXTO DEL CURSO
+# CONTEXTO DEL CURSO
 
 ## Identificación
 - Asignatura: [nombre]
@@ -47,4 +47,4 @@
 
 ---
 
-**Cómo usarla con los demás prompts:** escribe `Usa la FICHA DE CONTEXTO DEL CURSO que está arriba (o en las instrucciones del proyecto).` y luego pega el prompt que necesites.
+**Cómo usarlo con los demás prompts:** escribe `Usa el CONTEXTO DEL CURSO que está arriba (o en las instrucciones del proyecto).` y luego pega el prompt que necesites.
