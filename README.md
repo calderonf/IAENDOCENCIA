@@ -64,4 +64,4 @@ No cargues nombres, códigos, correos ni notas de estudiantes, ni información i
 
 Contenidos basados en los capítulos 9 y 10 del libro *Inteligencia artificial generativa en la educación: una guía para estudiantes, docentes e instituciones* (Calderón, Gerlein y Parra, Pontificia Universidad Javeriana, en preparación). Materiales complementarios del libro: <https://github.com/calderonf/IA_GENERATIVA_EN_LA_EDUCACION>.
 
-Material con fines formativos. Se sugiere la licencia [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es) (ajústala antes de publicar si prefieres otra).
+Material con fines formativos. Se sugiere la licencia [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.es).
