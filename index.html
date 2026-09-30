@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prompts aplicados al diseño de sílabos, actividades, rúbricas y material de enseñanza con IA generativa. Material de taller para docentes universitarios.">
+  <title>IA en docencia · Prompts para diseñar tu curso</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232C5697'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' fill='%23F8CD00' text-anchor='middle'%3EIA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-mark">IA</span><span>IA en <i>docencia</i></span></a>
+    <div class="topbar-actions"><span class="duration">Taller · 2 horas</span><button class="icon-button" id="theme-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button></div>
+  </header>
+  <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+
+  <main id="main-content">
+
+    <!-- ============ INICIO ============ -->
+    <section class="chapter hero" id="inicio" data-title="Inicio">
+      <p class="eyebrow">Aula Aumentada · Sesión 4 · 30 de septiembre de 2026 · 9:00–11:00 a. m.</p>
+      <p class="author">Francisco Carlos Calderón, Ph.D. <span>·</span> Profesor, Departamento de Electrónica <span>·</span> Facultad de Ingeniería <span>·</span> Pontificia Universidad Javeriana</p>
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Del prompt general al prompt docente.</p>
+          <h1>Prompts para <em>diseñar</em> tu curso.</h1>
+          <p class="lead">Sílabos, resultados de aprendizaje, actividades, rúbricas y material de clase. La IA redacta borradores rápido; tú pones el criterio pedagógico, el contexto y la verificación.</p>
+          <div class="hero-actions"><a class="button primary" href="#anatomia">Comenzar <span aria-hidden="true">→</span></a><a class="button ghost" href="#kit">Ir al kit de prompts</a></div>
+        </div>
+        <aside class="hero-card"><p class="card-label">La idea en una frase</p><p class="big-quote">Un buen prompt docente = la anatomía de un buen prompt + el contexto de tu curso, escrito una vez y reutilizado siempre.</p><div class="card-tags"><span>sílabo</span><span>resultados</span><span>actividades</span><span>rúbricas</span><span>material</span></div></aside>
+      </div>
+      <nav class="route-preview" aria-label="Ruta de la sesión">
+        <a href="#anatomia"><b>01</b> Anatomía</a><a href="#ficha"><b>02</b> Ficha del curso</a><a href="#resultados"><b>03</b> Resultados</a><a href="#actualizar"><b>04</b> Actualizar sílabo</a><a href="#actividades"><b>05</b> Actividades</a><a href="#rubricas"><b>06</b> Rúbricas</a><a href="#material"><b>07</b> Material</a><a href="#validar"><b>08</b> Validar</a><a href="#taller"><b>09</b> Taller</a><a href="#kit"><b>10</b> Kit</a>
+      </nav>
+    </section>
+
+    <!-- ============ 01 ANATOMÍA ============ -->
+    <section class="chapter" id="anatomia" data-title="Anatomía">
+      <div class="chapter-heading"><p class="eyebrow">01 · 10 minutos</p><h2>La anatomía de un buen prompt, aplicada a la docencia.</h2><p>Cinco piezas bastan. Lo que cambia en docencia es cuánto <strong>contexto pedagógico</strong> necesita la IA para dejar de dar respuestas genéricas.</p></div>
+      <div class="prompt-anatomy">
+        <div class="anatomy-item"><b>1</b><h3>Rol</h3><p>Desde qué experticia responde: asesor curricular, par evaluador, autor de casos.</p></div>
+        <div class="anatomy-item"><b>2</b><h3>Contexto</h3><p>Curso, nivel, estudiantes, resultados de aprendizaje, recursos y reglas.</p></div>
+        <div class="anatomy-item"><b>3</b><h3>Tarea</h3><p>Un verbo claro y, si es compleja, los pasos en orden.</p></div>
+        <div class="anatomy-item"><b>4</b><h3>Formato</h3><p>Tabla, rúbrica, lista, Markdown: algo que puedas revisar y reutilizar.</p></div>
+        <div class="anatomy-item"><b>5</b><h3>Restricciones</h3><p>Extensión, nivel, tono, qué no inventar y qué preguntar antes.</p></div>
+      </div>
+      <div class="plus"><strong>+</strong><p><strong>Ficha de contexto del curso:</strong> la pieza 2 escrita una sola vez y pegada en cada conversación (o guardada en un Proyecto o Gem). Es lo que más mejora las respuestas.</p></div>
+
+      <h3 style="margin-top:2.4rem">Técnicas de prompting → tareas docentes</h3>
+      <div class="table-wrap"><table class="data">
+        <thead><tr><th>Técnica</th><th>En qué consiste</th><th>Uso docente en esta sesión</th></tr></thead>
+        <tbody>
+          <tr><td>Few-shot (dar ejemplos)</td><td>Mostrar uno o varios ejemplos del resultado esperado</td><td>Pegar un caso o ejercicio tuyo para que imite estilo y dificultad</td></tr>
+          <tr><td>Cadena de pensamiento por pasos</td><td>Enumerar los pasos que debe seguir antes de responder</td><td>Diagnosticar un resultado de aprendizaje antes de reescribirlo</td></tr>
+          <tr><td>Encadenamiento de prompts</td><td>Dividir una tarea grande en prompts sucesivos</td><td>Auditor → resultados → alineación → actividad → rúbrica</td></tr>
+          <tr><td>Árbol de pensamientos</td><td>Pedir varias alternativas antes de decidir</td><td>Una actividad en tres variantes según el uso de IA</td></tr>
+          <tr><td>Autoconsistencia</td><td>Repetir la pregunta en chats separados y comparar</td><td>Detectar datos incoherentes en un caso o un ejercicio</td></tr>
+          <tr><td>"Pregúntame antes"</td><td>Pedirle que haga preguntas si le falta información</td><td>Evitar que invente datos de tu curso</td></tr>
+        </tbody>
+      </table></div>
+      <div class="question-strip"><span>Pregunta para el chat</span><p>¿Qué tarea de preparación de clase te quita más tiempo cada semestre?</p></div>
+    </section>
+
+    <!-- ============ 02 FICHA ============ -->
+    <section class="chapter" id="ficha" data-title="Ficha del curso">
+      <div class="chapter-heading"><p class="eyebrow">02 · 10 minutos</p><h2>La ficha de contexto del curso.</h2><p>Sin ficha, la IA diseña para un "curso promedio" que no existe. Con ficha, propone para tus estudiantes, tus créditos y tus reglas. Llénala aquí y cópiala; nada sale de tu navegador.</p></div>
+      <div class="builder">
+        <form class="form" id="ficha-form" autocomplete="off">
+          <label class="full">Asignatura<input name="asignatura" placeholder="p. ej. Introducción a la Analítica de Datos con Python"></label>
+          <label>Programa<input name="programa" placeholder="p. ej. Ingeniería / Economía"></label>
+          <label>Nivel<input name="nivel" placeholder="p. ej. pregrado, 4.º semestre"></label>
+          <label>Créditos<input name="creditos" inputmode="numeric" placeholder="3"></label>
+          <label>Semanas<input name="semanas" inputmode="numeric" placeholder="16"></label>
+          <label>Modalidad<select name="modalidad"><option>presencial</option><option>virtual</option><option>híbrida</option></select></label>
+          <label>Número de estudiantes<input name="n" inputmode="numeric" placeholder="30"></label>
+          <label class="full">Lo que ya saben<textarea name="saben" placeholder="Conceptos y herramientas previas"></textarea></label>
+          <label class="full">Dificultades frecuentes<textarea name="dificultades" placeholder="Errores o vacíos que sueles ver"></textarea></label>
+          <label class="full">Resultados de aprendizaje vigentes (uno por línea)<textarea name="ra" placeholder="RA1&#10;RA2&#10;RA3"></textarea></label>
+          <label class="full">Evaluación actual<textarea name="evaluacion" placeholder="Parcial 1 30 %, Parcial 2 30 %, Proyecto 40 %"></textarea></label>
+          <label class="full">Recursos y reglas institucionales<textarea name="recursos" placeholder="Software, datos, bibliografía base, pesos máximos..."></textarea></label>
+          <label class="full">Postura frente al uso de IA por estudiantes<select name="postura"><option>intermedia (permitida con declaración, excepto en evaluaciones en clase)</option><option>restrictiva (solo usos puntuales y declarados)</option><option>integrada (su uso crítico es parte de lo que se aprende)</option></select></label>
+          <div class="form-actions"><button class="button small ghost" type="button" id="ficha-ejemplo">Cargar ejemplo</button><button class="button small ghost" type="button" id="ficha-limpiar">Limpiar</button></div>
+        </form>
+        <div class="code-panel">
+          <div class="panel-title"><span>Tu ficha en Markdown</span><span class="actions"><button type="button" data-copy-target="ficha-output">Copiar</button><button type="button" id="ficha-descargar">Descargar .md</button></span></div>
+          <pre id="ficha-output"><code></code></pre>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:1.6rem">
+        <div class="card"><span class="tag">Opción 1</span><h3>Pegarla al inicio</h3><p>Funciona en cualquier herramienta gratuita. Pégala antes de cada prompt del kit.</p></div>
+        <div class="card"><span class="tag">Opción 2</span><h3>Proyecto o Gem</h3><p>Guárdala como instrucciones de un Proyecto (ChatGPT, Claude) o de una Gem (Gemini), si tu plan lo permite.</p></div>
+        <div class="card"><span class="tag">Opción 3</span><h3>NotebookLM</h3><p>Súbela como fuente junto al sílabo y tus lecturas: las respuestas quedan ancladas a tus documentos.</p></div>
+      </div>
+      <div class="callout warning"><strong>Nunca en la ficha:</strong> nombres, códigos, correos ni notas de estudiantes, ni información institucional reservada.</div>
+    </section>
+
+    <!-- ============ 03 RESULTADOS ============ -->
+    <section class="chapter" id="resultados" data-title="Resultados de aprendizaje">
+      <div class="chapter-heading"><p class="eyebrow">03 · 20 minutos</p><h2>Resultados de aprendizaje que se pueden evidenciar.</h2><p>Todo el sílabo depende de ellos. Si un resultado no se puede observar, tampoco se puede evaluar, y la IA tampoco sabrá qué actividad proponerte.</p></div>
+      <div class="formula" aria-label="Estructura de un resultado de aprendizaje"><span>VERBO observable</span><i>+</i><span>OBJETO</span><i>+</i><span>CONDICIÓN o contexto</span><i>+</i><span>CRITERIO de desempeño</span></div>
+      <div class="two-columns">
+        <div class="comparison">
+          <article class="bad"><p class="comparison-label">Antes · analítica de datos</p><p>“Entender la estadística descriptiva.”</p></article>
+          <article class="good"><p class="comparison-label">Después · Analizar</p><p>“<strong>Interpretar</strong> medidas de tendencia central, dispersión y correlación de un conjunto de datos, <strong>distinguiendo</strong> lo que los datos permiten afirmar de lo que no (p. ej. causalidad).”</p></article>
+          <article class="bad"><p class="comparison-label">Antes · economía básica</p><p>“Comprender la oferta y la demanda.”</p></article>
+          <article class="good"><p class="comparison-label">Después · Aplicar</p><p>“<strong>Predecir</strong>, con un modelo gráfico de oferta y demanda, el efecto de un impuesto sobre el precio y la cantidad de equilibrio, y explicar quién soporta la carga según las elasticidades.”</p></article>
+          <p style="font-size:.88rem;color:var(--muted)">Más ejemplos (programación, escritura, inflación): <a class="text-link" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/ejemplos/resultados-antes-despues.md" target="_blank" rel="noopener">resultados antes/después</a>.</p>
+        </div>
+        <div>
+          <div class="bloom-tabs" role="tablist" aria-label="Niveles de la taxonomía de Bloom revisada">
+            <button type="button" role="tab" aria-selected="true" aria-controls="b1" id="tb1">Recordar</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="b2" id="tb2">Comprender</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="b3" id="tb3">Aplicar</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="b4" id="tb4">Analizar</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="b5" id="tb5">Evaluar</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="b6" id="tb6">Crear</button>
+          </div>
+          <div class="bloom-panel" role="tabpanel" id="b1" aria-labelledby="tb1"><h3>Recordar</h3><p class="verbs">identificar · enumerar · reconocer · definir</p><p><em>Identificar</em> los tipos de variables (numérica, categórica, ordinal) en un conjunto de datos.</p><p style="color:var(--muted);font-size:.88rem">Útil en cursos introductorios, pero es el nivel que una IA resuelve con más facilidad.</p></div>
+          <div class="bloom-panel" role="tabpanel" id="b2" aria-labelledby="tb2" hidden><h3>Comprender</h3><p class="verbs">explicar · interpretar · clasificar · resumir</p><p><em>Explicar</em> con sus palabras por qué la mediana es más robusta que la media ante valores atípicos.</p></div>
+          <div class="bloom-panel" role="tabpanel" id="b3" aria-labelledby="tb3" hidden><h3>Aplicar</h3><p class="verbs">calcular · implementar · aplicar · elaborar</p><p><em>Implementar</em> en Python una función que calcule la variación porcentual de una serie de precios, con casos de prueba.</p></div>
+          <div class="bloom-panel" role="tabpanel" id="b4" aria-labelledby="tb4" hidden><h3>Analizar</h3><p class="verbs">contrastar · descomponer · diagnosticar · distinguir supuestos</p><p><em>Diagnosticar</em> problemas de calidad (faltantes, duplicados, códigos especiales) antes de sacar conclusiones de un conjunto de datos.</p></div>
+          <div class="bloom-panel" role="tabpanel" id="b5" aria-labelledby="tb5" hidden><h3>Evaluar</h3><p class="verbs">juzgar · justificar · recomendar · priorizar con criterios</p><p><em>Juzgar</em> si las conclusiones de un análisis hecho por IA están respaldadas por los datos, y justificar las correcciones.</p></div>
+          <div class="bloom-panel" role="tabpanel" id="b6" aria-labelledby="tb6" hidden><h3>Crear</h3><p class="verbs">diseñar · formular · construir un modelo propio</p><p><em>Diseñar</em> un tablero de visualización que responda una pregunta de política pública con datos abiertos.</p></div>
+          <div class="callout yellow" style="margin-top:1rem"><strong>Alineación constructiva (Biggs):</strong><p>cada resultado necesita una actividad que lo prepare y una evidencia que lo demuestre. Si falta alguna de las tres, hay un hueco en el curso.</p></div>
+        </div>
+      </div>
+
+      <div class="code-panel" style="margin-top:2rem">
+        <div class="panel-title"><span>Prompt 01 · Redactar o mejorar resultados de aprendizaje</span><span class="actions"><button type="button" data-copy-target="p01">Copiar</button><a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/01-resultados-de-aprendizaje.md" target="_blank" rel="noopener">Ver plantilla ↗</a></span></div>
+<pre id="p01"><code><span class="hl">## ROL</span>
+Actúa como asesor(a) de diseño curricular en educación superior, con experiencia en
+alineación constructiva (Biggs) y en la taxonomía de Bloom revisada.
+
+<span class="hl">## CONTEXTO</span>
+Usa la FICHA DE CONTEXTO DEL CURSO.
+Estos son los resultados de aprendizaje actuales (o mis ideas iniciales):
+&lt;resultados&gt;
+[pega aquí]
+&lt;/resultados&gt;
+
+<span class="hl">## TAREA</span>
+Sigue estos pasos en orden:
+1. Diagnostica cada resultado: ¿es observable y medible? ¿qué nivel de Bloom tiene?
+   ¿qué verbos vagos usa ("conocer", "entender", "familiarizarse")?
+2. Propón una versión mejorada: VERBO + OBJETO + CONDICIÓN + CRITERIO.
+3. Indica qué evidencia concreta demostraría el logro de cada resultado.
+4. Señala en cuáles una IA podría producir la evidencia en lugar del estudiante
+   y sugiere cómo reformularla para que muestre juicio propio.
+
+<span class="hl">## FORMATO</span>
+Tabla: | RA original | Diagnóstico | Nivel Bloom | RA mejorado | Evidencia | Riesgo IA y ajuste |
+Después, máximo 5 preguntas que necesites que yo responda.
+
+<span class="hl">## RESTRICCIONES</span>
+- Máximo [5] resultados para todo el curso; un solo verbo principal por resultado.
+- Coherentes con el nivel del curso.
+- Si te falta información, pregúntame antes de inventarla.</code></pre>
+      </div>
+      <div class="question-strip"><span>Ejercicio relámpago</span><p>En el chat, mejora este resultado en un minuto: <em>“Conocer las librerías de Python para análisis de datos.”</em></p></div>
+    </section>
+
+    <!-- ============ 04 ACTUALIZAR ============ -->
+    <section class="chapter" id="actualizar" data-title="Actualizar un sílabo">
+      <div class="chapter-heading"><p class="eyebrow">04 · 15 minutos</p><h2>Actualizar un sílabo: por secciones, no de una vez.</h2><p>Pedir "reescribe mi sílabo" produce un documento genérico y bonito. Es mejor diagnosticar, priorizar tres cambios y trabajar cada sección con su propio prompt.</p></div>
+      <div class="flow">
+        <div><h3>Diagnóstico</h3><p>Un auditor crítico revisa el sílabo vigente.</p><a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/03-auditor-de-silabo.md" target="_blank" rel="noopener">Prompt 03</a></div>
+        <div><h3>Priorizar</h3><p>Máximo tres cambios con mayor impacto este semestre.</p></div>
+        <div><h3>Borrador asistido</h3><p>Resultados, alineación, actividades o bibliografía, una sección a la vez.</p><a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/README.md" target="_blank" rel="noopener">Prompts 01–05</a></div>
+        <div><h3>Revisión docente</h3><p>Coherencia, viabilidad y verificación de toda fuente.</p></div>
+        <div><h3>Publicar y comunicar</h3><p>El primer día, incluida la política de uso de IA.</p></div>
+      </div>
+
+      <div class="two-columns" style="margin-top:2rem">
+        <div class="code-panel">
+          <div class="panel-title"><span>Prompt 03 · Auditor crítico (extracto)</span><span class="actions"><button type="button" data-copy-file="prompts/03-auditor-de-silabo.md">Copiar completo</button><a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/03-auditor-de-silabo.md" target="_blank" rel="noopener">Ver ↗</a></span></div>
+<pre><code><span class="hl">## ROL</span>
+Actúa como miembro exigente de un comité curricular.
+No eres complaciente: tu valor está en encontrar
+lo que hay que mejorar.
+
+<span class="hl">## TAREA</span>
+Evalúa: resultados, alineación, vigencia,
+evaluación en la era de la IA, política de IA,
+bibliografía y accesibilidad.
+Para cada criterio cita TEXTUALMENTE el fragmento
+del sílabo que sustenta tu juicio.
+
+<span class="hl">## FORMATO</span>
+| Criterio | ✅ 🟡 ❌ | Evidencia textual | Recomendación |
+Luego, las 3 prioridades.</code></pre>
+        </div>
+        <div>
+          <div class="callout" style="margin-top:0"><strong>Contra la complacencia.</strong><p>Los modelos tienden a decir que todo está bien. Tres antídotos: un rol exigente, criterios explícitos uno por uno y la obligación de citar evidencia del documento. Si todo está bien, que explique por qué.</p></div>
+          <div class="callout warning"><strong>Bibliografía: el riesgo número uno.</strong><p>Los modelos inventan referencias verosímiles, con autores reales y DOI falsos. Verifica cada una en <a href="https://search.crossref.org/" target="_blank" rel="noopener">Crossref ↗</a>, <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar ↗</a> o el catálogo de la biblioteca. <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/04-bibliografia-verificable.md" target="_blank" rel="noopener">Prompt 04</a>.</p></div>
+          <div class="callout yellow"><strong>Cláusula breve de uso de IA para el sílabo</strong><p id="clausula"><em>En este curso puedes usar herramientas de IA generativa para aclarar conceptos, depurar código y mejorar la redacción, siempre que el trabajo final refleje comprensión propia y puedas explicarlo y defenderlo. No está permitido usarlas en evaluaciones en clase ni presentar como propio un trabajo generado sin modificación sustancial. Declara al entregar qué herramienta usaste, para qué y qué cambiaste.</em></p><p><button class="button small ghost" type="button" data-copy-target="clausula">Copiar cláusula</button></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 ACTIVIDADES ============ -->
+    <section class="chapter" id="actividades" data-title="Actividades">
+      <div class="chapter-heading"><p class="eyebrow">05 · 15 minutos</p><h2>Una actividad, tres variantes.</h2><p>La pregunta útil no es "¿cómo evito que usen IA?", sino "¿qué evidencia de aprendizaje necesito y qué papel cumple la IA en esta actividad?". Pide a la IA las tres variantes y decide tú.</p></div>
+      <div class="grid-3">
+        <div class="card variant a"><span class="letter">A</span><h3>Sin IA</h3><p>La evidencia se produce en clase, en vivo o de forma oral.</p><p><strong>Para:</strong> habilidades base que deben dominar solos.</p></div>
+        <div class="card variant b"><span class="letter">B</span><h3>IA declarada</h3><p>Apoyo permitido: qué herramienta, para qué y qué cambió.</p><p><strong>Para:</strong> la mayoría del trabajo autónomo.</p></div>
+        <div class="card variant c"><span class="letter">C</span><h3>IA como objeto</h3><p>El estudiante audita, corrige o contrasta una respuesta de IA.</p><p><strong>Para:</strong> pensamiento crítico y juicio profesional.</p></div>
+      </div>
+
+      <h3 style="margin-top:2.2rem">Ejemplo variante C · "Audita al analista artificial"</h3>
+      <div class="two-columns">
+        <div>
+          <p>Una fundación recogió datos de 10 hogares (<a href="ejemplos/hogares.csv" download>hogares.csv</a>). En el diccionario de datos, <code>ingreso = 0</code> significa "no respondió". Esta fue la respuesta de una IA. <strong>Tiene tres errores: uno de datos, uno de economía y uno de razonamiento.</strong></p>
+          <div class="ai-answer"><p><code>df["ingreso"].mean()  # 3.54</code><br><code>df["ingreso"].corr(df["gasto_alimentos"])  # 0.87</code></p><p>"El ingreso promedio es 3,54 millones. Hay una correlación de 0,87: los hogares con más ingresos destinan una <strong>mayor proporción</strong> de su dinero a la comida. Por lo tanto, <strong>aumentar el ingreso causa</strong> que dediquen una parte mayor a alimentarse, y esto aplica a los hogares colombianos en general."</p></div>
+        </div>
+        <div>
+          <details class="card"><summary><strong>Ver los tres errores</strong> (después de discutir)</summary>
+            <ol style="font-size:.92rem;padding-left:1.1rem">
+              <li><strong>Datos:</strong> trata el código 0 como ingreso real. Sin ese hogar, el promedio es 3,93 y la correlación 0,98.</li>
+              <li><strong>Economía:</strong> confunde gasto absoluto con proporción. El gasto en alimentos sube, pero su participación en el ingreso <em>baja</em> de 42 % a 17 % (ley de Engel).</li>
+              <li><strong>Razonamiento:</strong> afirma causalidad y generaliza al país con 9 hogares que no son una muestra aleatoria.</li>
+            </ol>
+            <a class="button small ghost" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/ejemplos/actividad-audita-al-analista-artificial.md" target="_blank" rel="noopener">Actividad completa con código corregido</a>
+          </details>
+          <div class="callout" style="margin-top:1rem"><strong>Estrategias que siguen funcionando:</strong><p>contexto propio que la IA no conoce · entregas por etapas (esquema → borrador → final) · sustentación de 3 minutos · declaración de uso de IA. Pedir "fuentes recientes" ya no basta: los modelos con búsqueda web las encuentran.</p></div>
+          <p style="margin-top:1rem"><a class="button small primary" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/05-actividad-tres-variantes.md" target="_blank" rel="noopener">Prompt 05 · Tres variantes</a> <button class="button small ghost" type="button" data-copy-file="prompts/05-actividad-tres-variantes.md">Copiar</button></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 RÚBRICAS ============ -->
+    <section class="chapter" id="rubricas" data-title="Rúbricas">
+      <div class="chapter-heading"><p class="eyebrow">06 · 10 minutos</p><h2>Rúbricas sin ambigüedad: genera y luego pon a prueba.</h2><p>Una rúbrica ambigua produce notas distintas con evaluadores distintos, sean humanos o IA. La IA sirve para redactarla y, sobre todo, para buscarle los huecos antes de usarla.</p></div>
+      <div class="two-columns">
+        <div class="comparison">
+          <article class="bad"><p class="comparison-label">Descriptor vago</p><p>“El análisis es <strong>adecuado</strong> y las conclusiones son <strong>pertinentes</strong>.”</p></article>
+          <article class="good"><p class="comparison-label">Descriptor observable</p><p>“Revisa faltantes y códigos especiales antes de calcular; cada conclusión se apoya en un número o gráfico del análisis y <strong>no afirma causalidad</strong> sin diseño que la respalde.”</p></article>
+          <div class="callout yellow" style="margin-top:.4rem"><strong>Compartir la rúbrica con los estudiantes</strong><p>Si la usan con IA para autoevaluarse y mejorar antes de entregar, eso es retroalimentación formativa. Pide además una versión en lenguaje sencillo de "qué significa hacerlo excelente".</p></div>
+        </div>
+        <div class="code-panel">
+          <div class="panel-title"><span>Prompt 06B · Prueba de estrés de la rúbrica</span><span class="actions"><button type="button" data-copy-target="p06b">Copiar</button><a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/06-rubrica-analitica.md" target="_blank" rel="noopener">Ver 6A + 6B ↗</a></span></div>
+<pre id="p06b"><code><span class="hl">## ROL</span>
+Actúa como dos evaluadores independientes que no se
+conocen, y luego como un estudiante que quiere la nota
+máxima con el mínimo esfuerzo.
+
+<span class="hl">## TAREA</span>
+Con la rúbrica anterior:
+1. Señala cada descriptor que dos docentes podrían
+   interpretar distinto y propone una redacción precisa.
+2. Describe dos trabajos muy diferentes que obtendrían
+   la MISMA nota. ¿Es justo? ¿Qué criterio falla?
+3. Como estudiante estratégico: ¿cómo obtendría 3 o 4
+   en cada criterio una respuesta generada por IA sin
+   comprensión? Propón qué ajustar.
+
+<span class="hl">## FORMATO</span>
+| Criterio | Problema detectado | Redacción propuesta |
+Y la rúbrica final corregida.</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 MATERIAL ============ -->
+    <section class="chapter" id="material" data-title="Material docente">
+      <div class="chapter-heading"><p class="eyebrow">07 · 15 minutos</p><h2>Material de clase: la IA hace el borrador, tú la versión final.</h2><p>Tres flujos que ahorran horas. En los tres, lo decisivo es darle tus ejemplos (<em>few-shot</em>) y verificar números, código y fuentes.</p></div>
+      <div class="grid-3">
+        <div class="card"><span class="tag">Prompt 07</span><h3>Caso de estudio</h3><p>Narrativa con dilema, anexos con datos coherentes, preguntas escalonadas y una nota docente separada con la solución.</p><p><strong>Verifica:</strong> resuélvelo en un chat nuevo; si da otra respuesta, hay datos incoherentes.</p><p><a class="button small ghost" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/07-caso-de-estudio.md" target="_blank" rel="noopener">Ver</a> <button class="button small ghost" type="button" data-copy-file="prompts/07-caso-de-estudio.md">Copiar</button></p></div>
+        <div class="card"><span class="tag">Prompt 08</span><h3>Ejercicios y variantes</h3><p>2 directos, 2 con variación y 2 de transferencia, cada uno con solución, errores típicos y variantes con otros datos.</p><p><strong>Verifica:</strong> ejecuta el código o recalcula; los modelos se equivocan en aritmética.</p><p><a class="button small ghost" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/08-ejercicios-con-solucion.md" target="_blank" rel="noopener">Ver</a> <button class="button small ghost" type="button" data-copy-file="prompts/08-ejercicios-con-solucion.md">Copiar</button></p></div>
+        <div class="card"><span class="tag">Prompt 09</span><h3>Lectura → guía → presentación</h3><p>Síntesis anclada a la lectura, una guía de trabajo para el estudiante y un esquema de diapositivas con notas del orador.</p><p><strong>Verifica:</strong> cada idea con su página; mejor en NotebookLM con tu PDF.</p><p><a class="button small ghost" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/09-lectura-a-guia-y-presentacion.md" target="_blank" rel="noopener">Ver</a> <button class="button small ghost" type="button" data-copy-file="prompts/09-lectura-a-guia-y-presentacion.md">Copiar</button></p></div>
+      </div>
+      <div class="two-columns" style="margin-top:2rem">
+        <div class="table-wrap"><table class="data">
+          <thead><tr><th>Tipo de ítem</th><th>Nivel de Bloom</th></tr></thead>
+          <tbody>
+            <tr><td>Opción múltiple</td><td>Recordar, comprender (con buenos distractores, también aplicar)</td></tr>
+            <tr><td>Respuesta corta</td><td>Comprender, aplicar</td></tr>
+            <tr><td>Problema abierto</td><td>Aplicar, analizar</td></tr>
+            <tr><td>Caso o ensayo</td><td>Analizar, evaluar, crear</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout" style="margin-top:0"><strong>Distractores con sentido.</strong><p>En opción múltiple, pide que cada opción incorrecta corresponda a un error típico real de tus estudiantes y que explique por qué es incorrecta. Así la pregunta también diagnostica.</p><p><strong>Una idea por diapositiva</strong> no es estética: la memoria de trabajo es limitada (carga cognitiva, Sweller).</p></div>
+      </div>
+    </section>
+
+    <!-- ============ 08 VALIDAR ============ -->
+    <section class="chapter" id="validar" data-title="Validar">
+      <div class="chapter-heading"><p class="eyebrow">08 · 5 minutos</p><h2>Nada llega al aula sin validar.</h2><p>La responsabilidad del material es de quien lo firma y lo entrega, no de la IA. Cinco criterios, y <strong>no se promedian</strong>: uno solo en rojo basta para no usarlo.</p></div>
+      <div class="table-wrap"><table class="data">
+        <thead><tr><th>Criterio</th><th><span class="tag ok">Listo</span></th><th><span class="tag warn">Ajustar</span></th><th><span class="tag bad">Rehacer</span></th></tr></thead>
+        <tbody>
+          <tr><td>Corrección disciplinar</td><td>Datos, fórmulas y código verificados</td><td>Imprecisiones aisladas</td><td>Errores que cambian lo que se enseña</td></tr>
+          <tr><td>Alineación</td><td>Corresponde a un resultado del sílabo</td><td>Relación parcial</td><td>Sin relación con ningún resultado</td></tr>
+          <tr><td>Fuentes y derechos</td><td>Fuentes que existen y están atribuidas; licencia clara</td><td>Falta atribución o verificar una fuente</td><td>Referencias inexistentes u obra protegida</td></tr>
+          <tr><td>Sesgos</td><td>Ejemplos diversos, sin estereotipos</td><td>Sesgos aislados</td><td>Estereotipos o exclusiones sistemáticas</td></tr>
+          <tr><td>Accesibilidad</td><td>Texto alternativo, contraste, formatos legibles</td><td>Falta alguna alternativa</td><td>Sin ninguna adaptación</td></tr>
+        </tbody>
+      </table></div>
+      <div class="two-columns" style="margin-top:1.5rem">
+        <div class="callout" style="margin-top:0"><strong>Segunda opinión:</strong><p>pega el material en un chat <em>nuevo</em>, idealmente con otro modelo, con un rol de revisor exigente. <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/10-validacion-de-material.md" target="_blank" rel="noopener">Prompt 10</a>.</p></div>
+        <div class="callout yellow" style="margin-top:0"><strong>Declara tu propio uso:</strong><p>"Material elaborado con asistencia de [herramienta] para [uso]; revisado y verificado por el docente." Modelas lo que pides a tus estudiantes.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ 09 TALLER ============ -->
+    <section class="chapter" id="taller" data-title="Taller">
+      <div class="chapter-heading"><p class="eyebrow">09 · 15 minutos en clase + tarea</p><h2>Taller: un resultado de aprendizaje tuyo, mejorado.</h2><p>Poco tiempo, un solo objetivo: salir con la ficha de tu curso lista y un resultado de aprendizaje reescrito.</p></div>
+      <ol class="steps">
+        <li><div><strong>Llena la ficha mínima</strong><p>En la <a href="#ficha">sección 02</a>: asignatura, nivel, estudiantes y resultados vigentes. Copia el Markdown.</p></div></li>
+        <li><div><strong>Abre un chat nuevo</strong><p>ChatGPT, Gemini, Claude o Copilot (versión gratuita). Pega la ficha.</p></div></li>
+        <li><div><strong>Pega el prompt 01</strong><p>Sobre <strong>un</strong> resultado de aprendizaje. Responde las preguntas que te haga.</p></div></li>
+        <li><div><strong>Comparte en el chat de la clase</strong><p>El antes y el después de tu resultado, y el nivel de Bloom.</p></div></li>
+      </ol>
+      <div class="checklist" aria-label="Lista de verificación del resultado mejorado">
+        <label><input type="checkbox" data-check="c1"> Tiene un verbo observable.</label>
+        <label><input type="checkbox" data-check="c2"> Indica condición o contexto.</label>
+        <label><input type="checkbox" data-check="c3"> Tiene un criterio de desempeño.</label>
+        <label><input type="checkbox" data-check="c4"> Sé qué evidencia lo demostraría.</label>
+        <label><input type="checkbox" data-check="c5"> Es viable con mis créditos y semanas.</label>
+        <label><input type="checkbox" data-check="c6"> Lo revisé yo; no lo acepté tal cual.</label>
+      </div>
+      <div class="homework">
+        <p class="eyebrow">Tarea para el lunes 5 de octubre</p>
+        <h3>Actualiza un fragmento de tu sílabo con la cadena de prompts.</h3>
+        <p>Elige uno: resultados de aprendizaje, una actividad con su rúbrica, o la bibliografía. Trae el <strong>antes y el después</strong>: en la próxima sesión lo convertiremos a Markdown y de ahí a Word, PDF o presentación.</p>
+        <p style="margin-top:1rem"><a class="button yellow" href="https://github.com/calderonf/IAENDOCENCIA/blob/main/guia-participante.md" target="_blank" rel="noopener">Guía del participante</a> <a class="button ghost" style="color:#fff;border-color:#fff" href="#kit">Kit de prompts</a></p>
+      </div>
+    </section>
+
+    <!-- ============ 10 KIT ============ -->
+    <section class="chapter resources" id="kit" data-title="Kit y recursos">
+      <div class="chapter-heading"><p class="eyebrow">10 · Para llevar</p><h2>Kit de prompts docentes.</h2><p>Once plantillas con la misma estructura. Empieza siempre por la 00. Cadena sugerida: 00 → 03 → 01 → 02 → 05 → 06 → 10.</p></div>
+      <div class="kit-list">
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/00-ficha-contexto-curso.md" target="_blank" rel="noopener"><b>00</b><span>Ficha de contexto del curso<small>Contexto reutilizable</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/01-resultados-de-aprendizaje.md" target="_blank" rel="noopener"><b>01</b><span>Resultados de aprendizaje<small>Redactar o mejorar RA medibles</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/02-mapa-de-alineacion.md" target="_blank" rel="noopener"><b>02</b><span>Mapa de alineación<small>RA → actividad → evidencia</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/03-auditor-de-silabo.md" target="_blank" rel="noopener"><b>03</b><span>Auditor de sílabo<small>Diagnóstico sin complacencia</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/04-bibliografia-verificable.md" target="_blank" rel="noopener"><b>04</b><span>Bibliografía verificable<small>Sin referencias inventadas</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/05-actividad-tres-variantes.md" target="_blank" rel="noopener"><b>05</b><span>Actividad en tres variantes<small>Sin IA · declarada · como objeto</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/06-rubrica-analitica.md" target="_blank" rel="noopener"><b>06</b><span>Rúbrica + prueba de estrés<small>Descriptores observables</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/07-caso-de-estudio.md" target="_blank" rel="noopener"><b>07</b><span>Caso de estudio<small>Datos, preguntas y nota docente</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/08-ejercicios-con-solucion.md" target="_blank" rel="noopener"><b>08</b><span>Ejercicios con solución<small>Variantes y errores típicos</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/09-lectura-a-guia-y-presentacion.md" target="_blank" rel="noopener"><b>09</b><span>Lectura → guía → presentación<small>Encadenamiento de 3 prompts</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/prompts/10-validacion-de-material.md" target="_blank" rel="noopener"><b>10</b><span>Validación de material<small>Rúbrica y segunda opinión</small></span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IAENDOCENCIA/blob/main/ejemplos/ficha-analitica-datos-python.md" target="_blank" rel="noopener"><b>Ej</b><span>Ficha de ejemplo<small>Analítica de datos con Python</small></span><i>↗</i></a>
+      </div>
+
+      <h3 style="margin-top:2.4rem">Herramientas y referencias</h3>
+      <div class="resource-list">
+        <a href="https://notebooklm.google.com/" target="_blank" rel="noopener"><b>NotebookLM</b><span>Respuestas ancladas a tus propios documentos.</span><i>↗</i></a>
+        <a href="https://search.crossref.org/" target="_blank" rel="noopener"><b>Crossref</b><span>Verificar que una referencia y su DOI existen.</span><i>↗</i></a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener"><b>Google Scholar</b><span>Buscar títulos exactos entre comillas.</span><i>↗</i></a>
+        <a href="https://udlguidelines.cast.org/" target="_blank" rel="noopener"><b>CAST · DUA 3.0</b><span>Diseño Universal para el Aprendizaje.</span><i>↗</i></a>
+        <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" rel="noopener"><b>WCAG 2.2</b><span>Accesibilidad de materiales digitales.</span><i>↗</i></a>
+        <a href="https://creativecommons.org/choose/" target="_blank" rel="noopener"><b>Creative Commons</b><span>Elegir la licencia de tus materiales.</span><i>↗</i></a>
+        <a href="https://github.com/calderonf/IA_GENERATIVA_EN_LA_EDUCACION" target="_blank" rel="noopener"><b>Materiales del libro</b><span>Sílabo antes/después, plantillas y rúbrica de validación.</span><i>↗</i></a>
+        <a href="https://www.datos.gov.co/" target="_blank" rel="noopener"><b>datos.gov.co</b><span>Datos abiertos para casos y ejercicios.</span><i>↗</i></a>
+      </div>
+      <p class="fine-print">Contenidos basados en los capítulos 9 y 10 de <em>Inteligencia artificial generativa en la educación: una guía para estudiantes, docentes e instituciones</em> (Calderón, Gerlein y Parra, Pontificia Universidad Javeriana, en preparación). Referencias: Biggs (1996), alineación constructiva; Anderson y Krathwohl (2001), taxonomía de Bloom revisada; Sweller (1988), carga cognitiva. No cargues datos personales de estudiantes ni información institucional reservada en servicios públicos. Las herramientas cambian con frecuencia: verifica condiciones de uso y privacidad antes de adoptarlas.</p>
+      <p class="closing">La IA acelera el borrador. El criterio pedagógico, el contexto y la verificación siguen siendo tuyos.</p>
+    </section>
+  </main>
+
+  <nav class="chapter-nav" aria-label="Navegación entre secciones"><button id="previous-chapter" type="button">← <span>Anterior</span></button><span id="chapter-counter" aria-live="polite"></span><button id="next-chapter" type="button"><span>Siguiente</span> →</button></nav>
+  <footer><span>IA en docencia · Aula Aumentada · Pontificia Universidad Javeriana · 2026</span><a href="#inicio">Volver al inicio ↑</a></footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
