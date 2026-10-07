@@ -235,3 +235,23 @@ details.card[open] summary{margin-bottom:.6rem}
 .form>*{min-width:0}.form input,.form select,.form textarea{width:100%;min-width:0}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 body.dark .brand-mark{background:#2c5697}
+
+/* ===== Parte 2 · Evaluación y IA ===== */
+.part-cover{border-top:6px solid var(--yellow)}
+.part-title{font-size:clamp(2.4rem,4.6vw,4.4rem)!important}
+.part-title em{font-style:normal;color:var(--blue);background:linear-gradient(transparent 70%,var(--yellow) 70%)}
+table.compare td{font-size:.86rem}
+table.compare td:first-child{width:15%}
+.norm-list{display:grid;gap:.75rem}
+.norm-list article{padding:1rem 1.15rem;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:.3rem .7rem .7rem .3rem}
+.norm-list article.key{border-left-color:var(--yellow);background:var(--yellow-soft)}
+.norm-list p{margin:.35rem 0 0;font-size:.92rem}
+.norm-tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+.card.law p{font-size:.9rem}
+.protocol ol{margin:.6rem 0 0;padding-left:1.15rem;font-size:.9rem;color:var(--ink)}
+.protocol li{margin-bottom:.55rem}
+.card.case details{margin-top:.8rem;border-top:1px solid var(--line);padding-top:.6rem}
+.card.case summary{cursor:pointer;color:var(--blue);font-weight:750}
+.card.case details p{color:var(--ink)}
+.resources h3{margin:.4rem 0 .9rem}
+body.dark .norm-list article.key{background:var(--yellow-soft)}

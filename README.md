@@ -20,6 +20,15 @@ Sesión 4 del curso *Aula Aumentada: Fundamentos de IA Generativa para la Docenc
 | 08 | Validación de material generado con IA |
 | 09 | Taller y tarea |
 | 10 | Kit de prompts y recursos |
+| **Parte 2** | **Ética y legalidad de la evaluación en tiempos de IA** |
+| 11 | El problema: por qué la evaluación oral vuelve al centro |
+| 12 | Comparativo de reglamentos: Javeriana, Los Andes y Nacional |
+| 13–15 | Lo que dice cada reglamento, con citas textuales |
+| 16 | Marco legal colombiano: debido proceso, Ley 1581 y Ley 1618 |
+| 17 | Protocolo para una evaluación oral: antes, durante y después |
+| 18 | Tres formatos de evaluación oral |
+| 19 | Casos para discutir |
+| 20 | Fuentes |
 
 ## Estructura del repositorio
 
@@ -30,6 +39,7 @@ assets/js/app.js            Navegación, copiar prompts, generador del contexto 
 prompts/                    Kit de 11 plantillas en Markdown (00–10) + índice
 ejemplos/                   Contexto de ejemplo, resultados antes/después, actividad con datos (CSV)
 guia-participante.md        Resumen de una página para los asistentes
+docs/evaluacion-oral.md     Parte 2 en Markdown: reglamentos, marco legal, protocolo y casos
 ```
 
 Los ejemplos provienen de analítica de datos con Python y de conceptos básicos de economía; las plantillas son generalistas y sirven para cualquier disciplina.
